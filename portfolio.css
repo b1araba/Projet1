@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;  /* Police principale */
+    margin: 0;                       /* Supprime les marges par défaut */
+    color: #333;                     /* Couleur du texte */
+    background-color: #f4f9ff;    /* Couleur de fond claire */
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Place le bouton Mode Nuit tout à droite */
+  align-items: center;
+  padding: 20px;
+  background-color: #0e7fdc;       /* Couleur de fond claire */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.container {
+  display: flex;       /* Aligne l'image et le bloc texte côte à côte */
+  align-items: center; /* Centre verticalement l'image par rapport au texte */
+  gap: 30px;           /* Espace entre l'image et le début du texte */
+}
+
+.logo {
+  width: 150px;        /* Taille de votre logo */
+  height: auto;
+  border-radius: 10px; /* Optionnel : arrondit un peu les coins */
+}
+
+.header-text h1 {
+  margin: 0 0 5px 0;   /* Supprime la marge par défaut et ajoute un petit espace en bas */
+}
+
+.header-text p {
+  margin: 2px 0;       /* Espace serré entre les deux lignes de métier */
+  font-size: 1.1em;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-top: 15px;    /* Espace au-dessus du lien LinkedIn */
+  text-decoration: none;
+  color: #562424;      /* Couleur LinkedIn */
+  font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;    /* Espace extérieur */
+}
+
+/* Conteneur Flex */
+.features {
+    display: flex;                  /* Active Flexbox */
+    justify-content: space-around;  /* Espace entre les blocs */
+    gap: 20px;                      /* Espace entre les éléments */
+}
+
+/* Chaque bloc */
+.feature {
+    background-color: white;
+    padding:5px;
+    border: 1px solid #ccc;
+    flex: 1;                /* Chaque bloc prend la même largeur */
+    text-align: center;
+}
+
+
+/* Le conteneur principal */
+.grid-realisations {
+  display: grid;
+  /* Crée 2 colonnes sur tablette, 3 ou 4 sur grand écran */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Chaque carte de projet */
+.realisation {
+  display: flex;
+  flex-direction: column; /* Aligne le titre et l'image verticalement */
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* L'image à l'intérieur de la carte */
+.img-projet {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top; /* Garde le haut de l'image visible au lieu du centre */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Section violette de fond */
+.contact-section {
+    background: #e6f2fc; /* Couleur violette */
+    padding: 80px 20px; /* Espacement interne */
+    display: flex; /* Active flexbox */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Carte blanche principale */
+.contact-card {
+    background: white; /* Fond blanc */
+    width: 100%; /* Largeur complète */
+    max-width: 900px; /* Largeur max */
+    border-radius: 20px; /* Coins arrondis */
+    display: flex; /* Mise en ligne */
+    overflow: hidden; /* Cache débordement */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* Ombre */
+}
+
+/* Partie gauche */
+.contact-info {
+    flex: 1; /* Prend 50% */
+    background: #0e7fdc;/* Fond violet */
+    color: white; /* Texte blanc */
+    padding: 50px; /* Espacement interne */
+}
+
+/* Espace sous le titre */
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+/* Espace sous le paragraphe */
+.contact-info p {
+    margin-bottom: 30px;
+    line-height: 1.6; /* Hauteur ligne */
+}
+
+/* Icônes sociales */
+.social-links a {
+    display: inline-flex; /* Alignement centré */
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Largeur cercle */
+    height: 45px; /* Hauteur cercle */
+    background: white; /* Fond blanc */
+    color: #0e7fdc; /* Icône violette */
+    border-radius: 50%; /* Forme ronde */
+    margin-right: 15px; /* Espace entre icônes */
+    font-size: 18px; /* Taille icône */
+    transition: 0.3s; /* Animation douce */
+}
+
+/* Effet au survol */
+.social-links a:hover {
+    transform: scale(1.1); /* Agrandissement */
+}
+
+/* Partie droite */
+.contact-form {
+    flex: 1; /* 50% */
+    padding: 50px;
+    display: flex;
+    align-items: center; /* Centre verticalement */
+}
+
+/* Groupe input */
+.input-group {
+    width: 100%;
+}
+
+/* Champ email */
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px; /* Coins arrondis */
+    border: 1px solid #ccc; /* Bordure grise */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Bouton */
+button {
+    /*  width: 100%;*/
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #052a48;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Curseur main */
+    transition: 0.3s;
+    width: 100px;        /* Largeur du cercle */
+    height: 60px;       /* Hauteur du cercle */
+     /* font-size: 24px;   Taille de l’icône */
+}
+
+button:hover {
+    background: #0e7fdc; /* Couleur plus claire */
+}
+
+/* Message d’erreur */
+small {
+    color: red;
+    display: block;
+    height: 15px;
+}
+
+/* Responsive mobile */
+@media(max-width: 768px) {
+    .contact-card {
+        flex-direction: column; /* Passe en colonne */
+    }
+}
+
+
+footer {
+    background-color: #0e7fdc;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    /* Les blocs passent en colonne sur mobile */
+    .features {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+        padding: 40px 20px;
+    }
+}
+
+/* Fond général */
+body.dark-mode {
+    background-color: #121212;  /* Fond sombre moderne */
+    color: #f1f1f1;             /* Texte clair */
+}
+
+/* Header et footer */
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+/* Cartes projets */
+body.dark-mode .realisation {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+}
+
+/* Section contact */
+body.dark-mode .contact-section {
+    background-color: #0f172a; /* Bleu très sombre */
+}
+
+/* Carte contact */
+body.dark-mode .contact-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Partie gauche contact */
+body.dark-mode .contact-info {
+    background-color: #0e7fdc; /* Tu peux garder ta couleur principale */
+    color: white;
+}
+
+/* Inputs */
+body.dark-mode input {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+/* Features */
+body.dark-mode .feature {
+    background-color: #1e1e1e;
+    border-color: #333;
+}

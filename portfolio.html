@@ -1,0 +1,185 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour rendre la page -->
+    <title>Portfolio</title> <!-- Titre affiché dans le navigateur -->
+    <link rel="stylesheet" href="portfolio.css"> <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body> <!--le logo, le titre principal et le bouton Mode Nuit -->
+    <header>
+  <div class="container">
+    <img src="logo.jpg" alt="Logo" class="logo">
+
+    <div class="header-text">
+      <h1>Benedicte ARABA</h1>
+      <p class="job-title">Ingénieur en Intelligence Artificielle</p>
+      <p class="job-subtitle">Référente Digitale</p>
+      <a target="_blank" href="https://bj.linkedin.com/in/benedicte-araba-3a5bb7133" class="linkedin-link"> Mon lien LinkedIn</a>
+    </div>
+  </div>
+
+
+    <div class="nav-links">
+            <a href="#">A Propos</a>
+            <a href="#">Nos offres</a>
+            <a href="#">Contacts</a>
+            <a href="#">Galeries</a>
+    </div>
+
+  <button id="modeNuit">Mode Nuit</button>
+</header>
+
+    <section class="presentation">
+        <h2>Présentation</h2>
+        <ul><p>Mon parcours combine une solide formation technique en IA, télécommunications et informatique, ainsi
+            que des expériences professionnelles dans des environnements digitaux et transformationnels.
+            Compétente en vision par ordinateur, machine learning et analyse de données, je recherche une première
+            opportunité professionnelle pour accompagner l’innovation et relever des défis technologiques durable à
+            fort impact.</p></ul>
+    </section>
+
+    <!-- Flexbox pour afficher 3 blocs -->
+    <div><ul><h2>Compétences</h2></ul></div>
+    <section class="features">
+       
+        <!-- Bloc 1 -->
+        <div class="feature">
+            <h3>Référent Digital</h3>
+            <p>Mise en place de l’identité visuelle d’une entreprise (création de logo, flyers, charte graphique, design UI/UX)</p>
+            <p>Stratégie marketing pour les entreprises</p>
+            <p>Gestion de projet (méthode agile)</p>
+            <p>Developpement web (HTML5, CSS, JavaScript)</p>
+        </div>
+
+        <!-- Bloc 2 -->
+        <div class="feature">
+            <h3>Intelligence Artificielle</h3>
+            <p>Machine Learning / Deep Learning</p>
+            <p>Segmentation d’images, traitement de données annotées</p>
+            <p>Prétraitement, visualisation et évaluation des données</p>
+            <p>PyTorch, TensorFlow, OpenCV</p>
+        </div>
+
+        <!-- Bloc 3 --> 
+        <div class="feature">
+            <h3>Télécommunications</h3>
+            <p> Transmission radio UHF</p>
+            <p>Déploiement et maintenance de réseaux télécoms</p>
+        </div>
+
+        <!-- Bloc 4 --> 
+        <div class="feature">
+            <h3>Informatique</h3>
+            <p>Installation, configuration et maintenance des systèmes informatiques</p>
+            <p>Câblage et assistance technique utilisateurs</p>
+            <p>Linux, VS Code, Python, Pack office</p>
+        </div>
+    </section>
+
+<ul><h2>Mes réalisations</h2></ul>
+<section class="realisations">
+
+  <div class="grid-realisations">
+    <div class="realisation">
+      <h3>Maquettage Mobile</h3>
+      <img src="maquette.png" alt="Projet Maquettage" class="img-projet">
+    </div>
+
+    <div class="realisation">
+      <h3>Logo </h3>
+      <img src="logo_petit_potage.png" alt="Projet Web" class="img-projet">
+    </div>
+
+    <div class="realisation">
+      <h3>Mock_up</h3>
+      <img src="Mockup_chapeau.jpg" alt="Projet IA" class="img-projet">
+    </div>
+    
+    <div class="realisation">
+      <h3>Affiche</h3>
+      <img src="orphelinat.png" alt="Projet logo" class="img-projet">
+    </div>
+    
+    </div>
+</section>
+
+<!-- Section principale contact -->
+<section class="contact-section">
+
+    <!-- Carte centrale blanche -->
+    <div class="contact-card">
+
+        <!-- Partie gauche : informations et réseaux -->
+        <div class="contact-info">
+
+            <!-- Titre -->
+            <h2>Travaillons ensemble</h2>
+
+            <!-- Petit texte descriptif -->
+            <p>N'hésitez pas à me contacter ou à me retrouver sur mes réseaux sociaux.</p>
+
+            <!-- Conteneur des icônes sociales -->
+            <div class="social-links">
+
+                <!-- Lien Facebook (ouvre dans un nouvel onglet) -->
+                <a href="facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i> <!-- Icône FontAwesome -->
+                </a>
+
+                <!-- Lien Email -->
+                <a href="mailto:votre-email@exemple.com">
+                    <i class="fas fa-envelope"></i> <!-- Icône enveloppe -->
+                </a>
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/229XXXXXXXX" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@tonprofil" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Partie droite : formulaire -->
+        <div class="contact-form">
+
+            <!-- Formulaire -->
+            <form id="contactForm">
+
+                <!-- Groupe input + message d’erreur -->
+                <div class="input-group">
+
+                    <!-- Champ email obligatoire -->
+                    <input type="email" id="email" placeholder="Votre email" required>
+
+                    <!-- Petit texte pour afficher l’erreur -->
+                    <small id="emailError"></small>
+
+                </div>
+
+                <!-- Bouton d’envoi -->
+                <button type="submit">Envoyer</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Pied de page/ Footer -->
+    <footer>
+        <p>© 2026 - Référent Digital. Tous droits réservés.</p>  <!--informations de copyright.-->
+    </footer>
+
+    <script src="portfolio.js" defer></script><!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
+ 
+
